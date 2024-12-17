@@ -1,103 +1,102 @@
 [
-    {
-      "id": 1,
-      "name": "Wireless Bluetooth Headphones",
-      "price": 2499,
-      "currency": "INR",
-      "description": "High-quality wireless headphones with noise cancellation and deep bass.",
-      "category": "Electronics",
-      "image": "https://via.placeholder.com/150?text=Headphones",
-      "brand": "Sony"
-    },
-    {
-      "id": 2,
-      "name": "Smartphone - 128GB",
-      "price": 15999,
-      "currency": "INR",
-      "description": "A feature-packed smartphone with a 6.5-inch display, 128GB storage, and a powerful camera.",
-      "category": "Mobile",
-      "image": "https://via.placeholder.com/150?text=Smartphone",
-      "brand": "Samsung"
-    },
-    {
-      "id": 3,
-      "name": "Fitness Tracker Watch",
-      "price": 1999,
-      "currency": "INR",
-      "description": "Track your daily activity, steps, heart rate, and sleep with this fitness band.",
-      "category": "Accessories",
-      "image": "https://via.placeholder.com/150?text=Fitness+Tracker",
-      "brand": "Mi"
-    },
-    {
-      "id": 4,
-      "name": "4K Ultra HD LED TV",
-      "price": 28999,
-      "currency": "INR",
-      "description": "Enjoy cinematic experiences with this 55-inch 4K LED TV with smart features.",
-      "category": "Electronics",
-      "image": "https://via.placeholder.com/150?text=4K+TV",
-      "brand": "LG"
-    },
-    {
-      "id": 5,
-      "name": "Leather Office Bag",
-      "price": 3499,
-      "currency": "INR",
-      "description": "Stylish leather office bag with multiple compartments and durable stitching.",
-      "category": "Fashion",
-      "image": "https://via.placeholder.com/150?text=Office+Bag",
-      "brand": "Louis Vuitton"
-    },
-    {
-      "id": 6,
-      "name": "Bluetooth Wireless Speaker",
-      "price": 1499,
-      "currency": "INR",
-      "description": "Portable Bluetooth speaker with deep bass and long battery life for all your music needs.",
-      "category": "Electronics",
-      "image": "https://via.placeholder.com/150?text=Bluetooth+Speaker",
-      "brand": "JBL"
-    },
-    {
-      "id": 7,
-      "name": "Casual Denim Jeans",
-      "price": 999,
-      "currency": "INR",
-      "description": "Comfortable and stylish denim jeans, perfect for casual outings.",
-      "category": "Fashion",
-      "image": "https://via.placeholder.com/150?text=Denim+Jeans",
-      "brand": "Levi's"
-    },
-    {
-      "id": 8,
-      "name": "Smart Home Security Camera",
-      "price": 5499,
-      "currency": "INR",
-      "description": "Monitor your home remotely with this wireless smart security camera.",
-      "category": "Home Appliances",
-      "image": "https://via.placeholder.com/150?text=Security+Camera",
-      "brand": "Nest"
-    },
-    {
-      "id": 9,
-      "name": "Gaming Laptop - 16GB RAM",
-      "price": 64999,
-      "currency": "INR",
-      "description": "A powerful gaming laptop with 16GB RAM, a fast processor, and dedicated graphics.",
-      "category": "Computers",
-      "image": "https://via.placeholder.com/150?text=Gaming+Laptop",
-      "brand": "Dell"
-    },
-    {
-      "id": 10,
-      "name": "Portable Power Bank - 10000mAh",
-      "price": 799,
-      "currency": "INR",
-      "description": "Charge your devices on the go with this 10000mAh portable power bank.",
-      "category": "Accessories",
-      "image": "https://via.placeholder.com/150?text=Power+Bank",
-      "brand": "Anker"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "price": 2499,
+    "currency": "INR",
+    "description": "High-quality wireless headphones with noise cancellation and deep bass.",
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150?text=Headphones",
+    "brand": "Sony"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone - 128GB",
+    "price": 15999,
+    "currency": "INR",
+    "description": "A feature-packed smartphone with a 6.5-inch display, 128GB storage, and a powerful camera.",
+    "category": "Mobile",
+    "image": "https://via.placeholder.com/150?text=Smartphone",
+    "brand": "Samsung"
+  },
+  {
+    "id": 3,
+    "name": "Fitness Tracker Watch",
+    "price": 1999,
+    "currency": "INR",
+    "description": "Track your daily activity, steps, heart rate, and sleep with this fitness band.",
+    "category": "Accessories",
+    "image": "https://via.placeholder.com/150?text=Fitness+Tracker",
+    "brand": "Mi"
+  },
+  {
+    "id": 4,
+    "name": "4K Ultra HD LED TV",
+    "price": 28999,
+    "currency": "INR",
+    "description": "Enjoy cinematic experiences with this 55-inch 4K LED TV with smart features.",
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150?text=4K+TV",
+    "brand": "LG"
+  },
+  {
+    "id": 5,
+    "name": "Leather Office Bag",
+    "price": 3499,
+    "currency": "INR",
+    "description": "Stylish leather office bag with multiple compartments and durable stitching.",
+    "category": "Fashion",
+    "image": "https://via.placeholder.com/150?text=Office+Bag",
+    "brand": "Louis Vuitton"
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Wireless Speaker",
+    "price": 1499,
+    "currency": "INR",
+    "description": "Portable Bluetooth speaker with deep bass and long battery life for all your music needs.",
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/150?text=Bluetooth+Speaker",
+    "brand": "JBL"
+  },
+  {
+    "id": 7,
+    "name": "Casual Denim Jeans",
+    "price": 999,
+    "currency": "INR",
+    "description": "Comfortable and stylish denim jeans, perfect for casual outings.",
+    "category": "Fashion",
+    "image": "https://via.placeholder.com/150?text=Denim+Jeans",
+    "brand": "Levi's"
+  },
+  {
+    "id": 8,
+    "name": "Smart Home Security Camera",
+    "price": 5499,
+    "currency": "INR",
+    "description": "Monitor your home remotely with this wireless smart security camera.",
+    "category": "Home Appliances",
+    "image": "https://via.placeholder.com/150?text=Security+Camera",
+    "brand": "Nest"
+  },
+  {
+    "id": 9,
+    "name": "Gaming Laptop - 16GB RAM",
+    "price": 64999,
+    "currency": "INR",
+    "description": "A powerful gaming laptop with 16GB RAM, a fast processor, and dedicated graphics.",
+    "category": "Computers",
+    "image": "https://via.placeholder.com/150?text=Gaming+Laptop",
+    "brand": "Dell"
+  },
+  {
+    "id": 10,
+    "name": "Portable Power Bank - 10000mAh",
+    "price": 799,
+    "currency": "INR",
+    "description": "Charge your devices on the go with this 10000mAh portable power bank.",
+    "category": "Accessories",
+    "image": "https://via.placeholder.com/150?text=Power+Bank",
+    "brand": "Anker"
+  }
+]
