@@ -35,7 +35,7 @@ function Success() {
               </div>
 
               {/* Return to Home Button */}
-              <a href="/" className="btn btn-success mt-4">
+              <a href="/home" className="btn btn-success mt-4">
                 Return to Home
               </a>
             </div>

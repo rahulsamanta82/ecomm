@@ -8,6 +8,9 @@ import ProductPage from './pages/Product';
 import RegisterPage from './pages/Register';
 import LoginPage from './pages/Login';
 import Success from './pages/Success';
+import AuthHome from './pages/AuthHome';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />  {/* Home page route */}
         <Route path="/register" element={<RegisterPage />} />  {/* Home page route */}
         <Route path="/success/:amount" element={<Success />} />  {/* Home page route */}
+        <Route path="/home" element={<AuthHome />} />  {/* Home page route */}
       </Routes>
     </Router>
   );

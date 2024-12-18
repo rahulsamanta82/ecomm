@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import axios from "axios"
+import Navbar from '../component/Navbar/Navbar';
+import Footer from '../component/Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+import { Navigate, useNavigate } from 'react-router-dom';
 function RegisterPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -8,6 +13,7 @@ function RegisterPage() {
   const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
+  const navigate = useNavigate()
   const handleSubmit = async(e) => {
     e.preventDefault();
 
@@ -35,9 +41,10 @@ function RegisterPage() {
     
         // Successfully registered
         console.log(response.data);
-        alert(response.data.message); // Display success message
-    
+        toast.success("Register Successfully")  
+        navigate("/login")  
       } catch (error) {
+        toast.error("Internal server Error")
         console.error("There was an error registering!", error);
         alert(error.response?.data?.message || "Something went wrong!");
       }
@@ -52,6 +59,10 @@ function RegisterPage() {
   };
 
   return (
+    <>
+
+    <Navbar />
+    <ToastContainer />
     <div className="container py-5">
       <div className="row justify-content-center">
         <div className="col-md-4">
@@ -129,6 +140,8 @@ function RegisterPage() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

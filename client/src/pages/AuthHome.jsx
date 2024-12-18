@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from 'react';
+import './Home.css';
 import Navbar from '../component/Navbar/Navbar';
 import Footer from '../component/Footer/Footer';
-import axios from "axios";
-import './Product.css';
 import NavbarAuth from '../component/Navbar/NavAuth';
+import axios from 'axios';
 
-function ProductPage() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+
+// Sample product data array
+
+function AuthHome() {
+  const images = [
+    "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
+    "https://www.lapcare.com/cdn/shop/files/LGT-423.jpg?v=1723119927&width=2048",
+    "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
+    "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
+
+  ];
+
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -26,22 +36,6 @@ function ProductPage() {
 
     fetchProducts();
   }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  // Filter products based on search term by product name (case-insensitive)
-  // Filter products based on search term in either the product name or brand (case-insensitive)
-  const filteredProducts = products.filter((product) => {
-    const lowercasedSearchTerm = searchTerm.trim().toLowerCase();
-    return (
-      product.name.toLowerCase().includes(lowercasedSearchTerm) ||
-      product.brand.toLowerCase().includes(lowercasedSearchTerm)
-    );
-  });
-
-
   const addCart = (product) => {
     // Retrieve the existing cart from localStorage (if it exists)
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -54,37 +48,64 @@ function ProductPage() {
 
     console.log("Cart updated:", cart);
   };
-
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <NavbarAuth />
-      <div className="container py-5">
-        <h1 className="text-center mb-4">Products</h1>
 
-        {/* Search bar */}
-        <div className="row mb-4">
-          <div className="col-md-6 offset-md-3">
-            <div className="input-group">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search products..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-              <button className="btn btn-outline-secondary" type="button">
-                <span className="bx--search-alt"></span>
-              </button>
-            </div>
-          </div>
-        </div>
+      <div
+  id="imageCarousel"
+  className="carousel slide"
+  data-bs-ride="carousel"
+  data-bs-interval="3000" // Adjust the interval (3000ms = 3 seconds)
+>
+  <div className="carousel-inner">
+    {images.map((image, index) => (
+      <div
+        className={`carousel-item ${index === 0 ? "active" : ""}`}
+        key={index}
+      >
+        <img
+          src={image}
+          className="d-block w-100"
+          alt={`Slide ${index + 1}`}
+        />
+      </div>
+    ))}
+  </div>
+
+  {/* Carousel Controls */}
+  <button
+    className="carousel-control-prev"
+    type="button"
+    data-bs-target="#imageCarousel"
+    data-bs-slide="prev"
+  >
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button
+    className="carousel-control-next"
+    type="button"
+    data-bs-target="#imageCarousel"
+    data-bs-slide="next"
+  >
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
 
 
 
 
-        {/* Product grid */}
+
+      <div className="container flex-grow-1">
+        <h1 className="headline">Our Best Products</h1>
+        <div className="underline"></div>
+
+
         <div className="row">
-          {filteredProducts.map((product) => (
+          {products
+          .map((product) => (
             <div key={product.id} className="col-md-4 mb-4">
               <div className="card shadow-sm product-card">
                 <img
@@ -111,16 +132,11 @@ function ProductPage() {
           ))}
         </div>
 
-        {/* No products found */}
-        {filteredProducts.length === 0 && (
-          <div className="alert alert-warning text-center" role="alert">
-            No products found matching your search!
-          </div>
-        )}
       </div>
+
       <Footer />
-    </>
+    </div>
   );
 }
 
-export default ProductPage;
+export default AuthHome;

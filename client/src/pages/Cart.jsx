@@ -3,6 +3,7 @@ import Navbar from '../component/Navbar/Navbar';
 import Footer from '../component/Footer/Footer';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import NavbarAuth from '../component/Navbar/NavAuth';
 
 function CartPage() {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ function CartPage() {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <Navbar />
+      <NavbarAuth />
       <div className="container py-5 flex-grow-1">
         <h1 className="text-center mb-4">Your Shopping Cart</h1>
 

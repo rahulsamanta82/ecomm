@@ -68,4 +68,56 @@
       margin: 10px 0;
     }
   }
-  
+  /* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #343a40;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+  z-index: 1050;
+  padding-top: 60px;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar .nav-link {
+  padding: 15px 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1049;
+}
+
+/* Navbar menu visible on large screens */
+.navbar-collapse {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}

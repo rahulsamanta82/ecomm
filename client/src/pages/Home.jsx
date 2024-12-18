@@ -2,6 +2,8 @@ import React from 'react';
 import './Home.css';
 import Navbar from '../component/Navbar/Navbar';
 import Footer from '../component/Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 
 // Sample product data array
@@ -21,15 +23,21 @@ const products = [
 ];
 
 function HomePage() {
+
+  const toastMesg = () =>{
+    console.log("Come")
+    toast.success("Please login")
+  }
   return (
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      
-      <div className="container flex-grow-1">
-      <h1 className="headline">Our Best Products</h1>
-<div className="underline"></div>
+      <ToastContainer />
 
-        
+      <div className="container flex-grow-1">
+        <h1 className="headline">Our Best Products</h1>
+        <div className="underline"></div>
+
+
         <div className="row">
           {products.map((product) => (
             <div className="col-md-3 col-sm-6 mb-4" key={product.id}>
@@ -44,14 +52,14 @@ function HomePage() {
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">{product.description}</p>
                   <h6 className="text-primary">₹{product.price}</h6>
-                  <button className="btn btn-primary btn-block">Add to Cart</button>
+                  <button className="btn btn-primary btn-block" onClick={toastMesg}>Add to Cart</button>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );

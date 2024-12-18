@@ -131,30 +131,20 @@ function Navbar() {
             </li>
             {/* Product Link */}
             <li className="nav-item">
-              <Link className="nav-link text-white hover-effect" to="/product">Product</Link>
+              <Link className="nav-link text-white hover-effect" to="/login">
+              <FaUserAlt className="nav-icon" />Login</Link>
             </li>
             {/* Login Link */}
             <li className="nav-item">
-              <Link className="nav-link text-white hover-effect" to="/login">
+              <Link className="nav-link text-white hover-effect" to="/register">
                 <FaUserAlt className="nav-icon" />
-                Login
+                Register
               </Link>
             </li>
             {/* Cart Link */}
-            <li className="nav-item d-flex align-items-center">
-              <Link className="nav-link text-white hover-effect" to="/cart">
-                <FaShoppingCart className="nav-icon" />
-                Cart
-              </Link>
-            </li>
+           
             {/* Logout Button (Conditional) */}
-            {localStorage.getItem("userToken") && (
-              <li className="nav-item">
-                <button className="btn btn-outline-light" onClick={handleLogout}>
-                  Logout
-                </button>
-              </li>
-            )}
+            
           </ul>
         </div>
       </div>
