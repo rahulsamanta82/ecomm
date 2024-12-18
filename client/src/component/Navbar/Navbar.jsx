@@ -69,11 +69,7 @@ function Navbar() {
               <FaUserAlt className="nav-icon" /> Register
             </Link>
           </li>
-          <li className="nav-item">
-            <button className="nav-link btn btn-link text-white" onClick={handleLogout}>
-              Logout
-            </button>
-          </li>
+        
         </ul>
       </div>
 
