@@ -1,0 +1,40 @@
+/* Add this to your Navbar.css or a separate CSS file */
+.headline {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    font-size: 2rem; /* Smaller font size */
+    font-weight: bold; /* Bold text */
+    color: transparent; /* Make text color transparent to show gradient */
+    background-color: #079db8;/* Updated gradient background with bright colors */
+    background-clip: text; /* Makes the gradient appear on text */
+    -webkit-background-clip: text; /* Support for webkit browsers */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Smaller padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 2s ease-out; /* Animation */
+}
+
+/* Add a subtle animation to the text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headline:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    transition: transform 0.3s ease;
+}
+
+.headline .underline {
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    background-color: #079db8; /* Updated underline color to match gradient */
+    margin-top: 10px;
+}

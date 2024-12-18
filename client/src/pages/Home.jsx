@@ -1,6 +1,8 @@
 import React from 'react';
+import './Home.css';
 import Navbar from '../component/Navbar/Navbar';
 import Footer from '../component/Footer/Footer';
+
 
 // Sample product data array
 const products = [
@@ -24,7 +26,9 @@ function HomePage() {
       <Navbar />
       
       <div className="container flex-grow-1">
-        <h1 className="text-center mb-4">Our Best Products</h1>
+      <h1 className="headline">Our Best Products</h1>
+<div className="underline"></div>
+
         
         <div className="row">
           {products.map((product) => (
