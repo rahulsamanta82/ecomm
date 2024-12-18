@@ -140,3 +140,21 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+---
+
+## Screenshots
+Include screenshots of the application to provide a visual overview. Place the images in a `screenshots` directory and reference them here.
+
+### Example:
+#### Homepage:
+![Homepage](screenshots/homepage.png)
+
+#### Product Page:
+![Product Page](screenshots/product_page.png)
+
+#### Shopping Cart:
+![Shopping Cart](screenshots/cart.png)
+
+#### Admin Dashboard:
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
