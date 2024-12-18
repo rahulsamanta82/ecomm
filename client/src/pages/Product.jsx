@@ -27,9 +27,6 @@ function ProductPage() {
     fetchProducts();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
   // Filter products based on search term by product name (case-insensitive)
   // Filter products based on search term in either the product name or brand (case-insensitive)

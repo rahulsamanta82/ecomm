@@ -11,7 +11,7 @@ import axios from 'axios';
 function AuthHome() {
   const images = [
     "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
-    "https://www.lapcare.com/cdn/shop/files/LGT-423.jpg?v=1723119927&width=2048",
+    "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
     "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
     "https://www.asus.com/media/global/SKU/90MP01Y6-BKGA00/7vyrfrssqokfseqw.jpg",
 
