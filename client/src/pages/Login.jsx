@@ -22,7 +22,7 @@ function LoginPage() {
       setErrorMessage('');
       try {
         // Make Axios POST request to backend for login
-        const response = await axios.post("http://localhost:5000/api/auth/login", {
+        const response = await axios.post("https://ecomm-dlpd.onrender.com/api/auth/login", {
           email,
           password
         }, {

@@ -14,7 +14,7 @@ function ProductPage() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/auth/get-product");
+        const response = await axios.get("https://ecomm-dlpd.onrender.com/api/auth/get-product");
         console.log(response.data);
         setProducts(response.data);
       } catch (error) {

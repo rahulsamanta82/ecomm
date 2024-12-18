@@ -29,7 +29,7 @@ function RegisterPage() {
       // Successful registration
 
       try {
-        const response = await axios.post("http://localhost:5000/api/auth/register", {
+        const response = await axios.post("https://ecomm-dlpd.onrender.com/api/auth/register", {
           name,
           email,
           password
