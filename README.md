@@ -86,7 +86,7 @@ npm run dev
 3. Add environment variables on Render's dashboard.
 
 ---
-
+ 
 ## Usage
 
 ### User Features:
@@ -154,7 +154,3 @@ Include screenshots of the application to provide a visual overview. Place the i
 
 #### Shopping Cart:
 ![Shopping Cart](screenshots/cart.png)
-
-#### Admin Dashboard:
-![Admin Dashboard](screenshots/admin_dashboard.png)
-
