@@ -6,7 +6,7 @@
     "currency": "INR",
     "description": "High-quality wireless headphones with noise cancellation and deep bass.",
     "category": "Electronics",
-    "image": "https://via.placeholder.com/150?text=Headphones",
+    "image": "https://elitehubs.com/cdn/shop/products/G2050-RED-1.jpg_result-1.jpg?v=1695327571&width=533",
     "brand": "Sony"
   },
   {
@@ -16,7 +16,7 @@
     "currency": "INR",
     "description": "A feature-packed smartphone with a 6.5-inch display, 128GB storage, and a powerful camera.",
     "category": "Mobile",
-    "image": "https://via.placeholder.com/150?text=Smartphone",
+    "image": "https://i.gadgets360cdn.com/large/vivo_y300_plus_1729055138782.jpg",
     "brand": "Samsung"
   },
   {
@@ -26,8 +26,8 @@
     "currency": "INR",
     "description": "Track your daily activity, steps, heart rate, and sleep with this fitness band.",
     "category": "Accessories",
-    "image": "https://via.placeholder.com/150?text=Fitness+Tracker",
-    "brand": "Mi"
+    "image": "https://i.ebayimg.com/images/g/0R8AAOSwdjBkIkdR/s-l1200.jpg",
+    "brand": "Boat"
   },
   {
     "id": 4,
@@ -36,8 +36,8 @@
     "currency": "INR",
     "description": "Enjoy cinematic experiences with this 55-inch 4K LED TV with smart features.",
     "category": "Electronics",
-    "image": "https://via.placeholder.com/150?text=4K+TV",
-    "brand": "LG"
+    "image": "https://electronicparadise.in/cdn/shop/files/Sony654KUltraHDSmartLEDGoogle.jpg?v=1702118450&width=1406",
+    "brand": "Sony"
   },
   {
     "id": 5,
@@ -46,8 +46,8 @@
     "currency": "INR",
     "description": "Stylish leather office bag with multiple compartments and durable stitching.",
     "category": "Fashion",
-    "image": "https://via.placeholder.com/150?text=Office+Bag",
-    "brand": "Louis Vuitton"
+    "image": "https://images.jdmagicbox.com/quickquotes/images_main/leather-brown-office-bag-size-15x12x7-inch-2220731019-n689jmks.jpg",
+    "brand": "Louis"
   },
   {
     "id": 6,
@@ -56,7 +56,7 @@
     "currency": "INR",
     "description": "Portable Bluetooth speaker with deep bass and long battery life for all your music needs.",
     "category": "Electronics",
-    "image": "https://via.placeholder.com/150?text=Bluetooth+Speaker",
+    "image": "https://cdn.shopify.com/s/files/1/0340/3975/8907/files/SRSULT1000_2.jpg?v=1712764762&width=364",
     "brand": "JBL"
   },
   {
@@ -66,8 +66,8 @@
     "currency": "INR",
     "description": "Comfortable and stylish denim jeans, perfect for casual outings.",
     "category": "Fashion",
-    "image": "https://via.placeholder.com/150?text=Denim+Jeans",
-    "brand": "Levi's"
+    "image": "https://www.trueclassictees.com/cdn/shop/files/4701_MEDIUMINDIGO_4.jpg?v=1718221448&width=1000",
+    "brand": "Pantaloons"
   },
   {
     "id": 8,
@@ -76,7 +76,7 @@
     "currency": "INR",
     "description": "Monitor your home remotely with this wireless smart security camera.",
     "category": "Home Appliances",
-    "image": "https://via.placeholder.com/150?text=Security+Camera",
+    "image": "https://m.media-amazon.com/images/I/614DzjUOgDL.jpg",
     "brand": "Nest"
   },
   {
@@ -86,8 +86,8 @@
     "currency": "INR",
     "description": "A powerful gaming laptop with 16GB RAM, a fast processor, and dedicated graphics.",
     "category": "Computers",
-    "image": "https://via.placeholder.com/150?text=Gaming+Laptop",
-    "brand": "Dell"
+    "image": "https://vasanthandco.in/UploadedFiles/productimages/20241001112759-71WChkpECLL._SX679_.jpg",
+    "brand": "Asus"
   },
   {
     "id": 10,
@@ -96,7 +96,27 @@
     "currency": "INR",
     "description": "Charge your devices on the go with this 10000mAh portable power bank.",
     "category": "Accessories",
-    "image": "https://via.placeholder.com/150?text=Power+Bank",
-    "brand": "Anker"
+    "image": "https://m.media-amazon.com/images/I/91H11IswBQL.jpg",
+    "brand": "Mi"
+  },
+  {
+    "id": 11,
+    "name": "Philips P3200",
+    "price": 2999,
+    "currency": "INR",
+    "description": "Print high-quality documents effortlessly with this fast and reliable printer.",
+    "category": "Accessories",
+    "image": "https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-canon-pigment-lxi-combines-color-and-black-and-white-laser-printer-image_2974717.jpg",
+    "brand": "Philips"
+  },
+  {
+    "id": 12,
+    "name": "Sony Alpha Series",
+    "price": 79999,
+    "currency": "INR",
+    "description": "Shoot stunning photos with the Sony camera’s advanced features and clarity.",
+    "category": "Accessories",
+    "image": "https://cdn11.bigcommerce.com/s-1nktaieb4v/images/stencil/1280x1280/products/35501/69398/sony-a1-camera__47969.1660160964.png?c=1",
+    "brand": "Sony"
   }
 ]

@@ -1,0 +1,54 @@
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.product-card .img-container {
+    height: 250px; /* Fixed height for consistent layout */
+    width: 100%; /* Full width of the card */
+    overflow: hidden; /* Prevents the image from going outside the container */
+    border-radius: 8px; /* Matches the image rounding */
+    position: relative; /* Ensures child elements stay in place */
+}
+
+.product-card img {
+    height: 100%; /* Ensures the image fills the container's height */
+    width: 100%; /* Ensures the image fills the container's width */
+    object-fit: cover; /* Ensures the image scales properly without stretching */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.product-card:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px; /* Optional: Adds spacing inside the card */
+}
+
+.product-card-body h5 {
+    font-size: 1.2rem; /* Slightly larger for better visibility */
+    margin-bottom: 0.5rem;
+}
+.bx--search-alt {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M10 18a7.95 7.95 0 0 0 4.897-1.688l4.396 4.396l1.414-1.414l-4.396-4.396A7.95 7.95 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8s3.589 8 8 8m0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6s-6-2.691-6-6s2.691-6 6-6'/%3E%3Cpath fill='%23000' d='M11.412 8.586c.379.38.588.882.588 1.414h2a3.98 3.98 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+  
