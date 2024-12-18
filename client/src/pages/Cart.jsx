@@ -33,7 +33,7 @@ function CartPage() {
 
     if (cartIds.length > 0) {
       axios
-        .post('http://localhost:5000/api/auth/get-products', { ids: cartIds })
+        .post('https://ecomm-dlpd.onrender.com/api/auth/get-products', { ids: cartIds })
         .then((response) => {
           setProducts(response.data);
           setCart(response.data);
