@@ -33,7 +33,7 @@ This project is a full-stack E-commerce platform built with modern technologies,
 
 ### Clone Repository
 ```bash
-git clone https://github.com/rahulsamanta82/ecomm.git
+https://github.com/rahulsamanta82/ecomm.git
 cd ecomm
 ```
 
